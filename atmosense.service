@@ -1,0 +1,43 @@
+[Unit]
+Description=AtmoSense Weather Forecasting and Alert System
+Documentation=file:///opt/atmosense/README.md
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=atmosense
+Group=atmosense
+WorkingDirectory=/opt/atmosense
+
+# Environment variables
+Environment="PATH=/opt/atmosense/venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin"
+Environment="PYTHONUNBUFFERED=1"
+Environment="PYTHONDONTWRITEBYTECODE=1"
+
+# Main process
+ExecStart=/opt/atmosense/venv/bin/python /opt/atmosense/main.py
+
+# Restart policy
+Restart=always
+RestartSec=60
+StartLimitInterval=300
+StartLimitBurst=5
+
+# Process management
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=atmosense
+
+# Resource limits
+MemoryLimit=2G
+CPUQuota=50%
+
+# Security
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=partial
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target

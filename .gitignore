@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+atmosense.log
+
+# Data and Models
+*.h5
+*.pkl
+*.pth
+scaler.pkl
+tnn_model.h5
+rnn_model.h5
+
+# Predictions
+predictions_log.csv
+
+# Environment
+.env
+.env.local
+config.py.backup
+
+# Configuration with secrets
+config_local.py
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# OS
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride

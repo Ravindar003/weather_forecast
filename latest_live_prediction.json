@@ -1,0 +1,99 @@
+{
+  "timestamp": "2026-04-24T15:07:33.455549",
+  "location": {
+    "name": "Trichy",
+    "lat": 10.7905,
+    "lon": 78.7047
+  },
+  "current": {
+    "temperature": 37.05,
+    "humidity": 44,
+    "pressure": 100.3,
+    "wind_speed": 7.416,
+    "wind_gust": 7.416,
+    "wind_direction": 110,
+    "visibility": 6.0,
+    "feels_like": 43.02,
+    "conditions": "Clouds",
+    "description": "broken clouds"
+  },
+  "prediction": {
+    "temperature": 25.220191955566406,
+    "timestamp": "2026-04-24T15:07:33.455560"
+  },
+  "raw_features": {
+    "tempm": 37.05,
+    "hum": 44,
+    "pressurem": 100.3,
+    "dewptm": 37.05,
+    "heatindexm": 43.02,
+    "windchillm": 43.02,
+    "wspdm": 7.416,
+    "wgustm": 7.416,
+    "wdird": 110,
+    "vism": 6.0,
+    "precipm": 0,
+    "fog": 0,
+    "rain": 0,
+    "snow": 0,
+    "thunder": 0,
+    "tornado": 0,
+    "hail": 0,
+    "hour_sin": -0.7071067811865471,
+    "hour_cos": -0.7071067811865479,
+    "day_sin": 0.9242907221930933,
+    "day_cos": -0.3816892202666588,
+    "heat_delta": 5.970000000000006,
+    "chill_delta": 5.970000000000006,
+    "tempm_lag1": 36.5,
+    "tempm_lag3": 37.8,
+    "tempm_lag6": 34.2,
+    "tempm_lag12": 24.8,
+    "tempm_lag24": 32.2
+  },
+  "api_response": {
+    "coord": {
+      "lon": 78.7047,
+      "lat": 10.7905
+    },
+    "weather": [
+      {
+        "id": 803,
+        "main": "Clouds",
+        "description": "broken clouds",
+        "icon": "04d"
+      }
+    ],
+    "base": "stations",
+    "main": {
+      "temp": 37.05,
+      "feels_like": 43.02,
+      "temp_min": 37.05,
+      "temp_max": 37.05,
+      "pressure": 1003,
+      "humidity": 44,
+      "sea_level": 1003,
+      "grnd_level": 994
+    },
+    "visibility": 6000,
+    "wind": {
+      "speed": 2.06,
+      "deg": 110
+    },
+    "clouds": {
+      "all": 75
+    },
+    "dt": 1777023452,
+    "sys": {
+      "type": 1,
+      "id": 9227,
+      "country": "IN",
+      "sunrise": 1776990591,
+      "sunset": 1777035395
+    },
+    "timezone": 19800,
+    "id": 7603116,
+    "name": "Trichy",
+    "cod": 200
+  }
+}
