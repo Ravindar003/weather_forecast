@@ -143,6 +143,26 @@ DEFAULT_NTFY_TOPIC = "atmosense-weather"
 DATETIME_FORMAT = "%Y%m%d-%H:%M"
 
 # ═══════════════════════════════════════════════════════════
+# LOCATION SETTINGS
+# ═══════════════════════════════════════════════════════════
+CITY = "Delhi"
+LAT = 28.6139     # Delhi latitude
+LON = 77.2090     # Delhi longitude
+
+# ═══════════════════════════════════════════════════════════
+# API KEYS & CREDENTIALS
+# ═══════════════════════════════════════════════════════════
+OPENWEATHERMAP_API_KEY = os.getenv("OPENWEATHER_API_KEY", "6cb67a9d1eefbcbbbb7f8569804becd3")
+
+# ═══════════════════════════════════════════════════════════
 # DEVICE (GPU if available, else CPU)
 # ═══════════════════════════════════════════════════════════
 DEVICE = "cuda" if __import__("torch").cuda.is_available() else "cpu"
+
+# ═══════════════════════════════════════════════════════════
+# FEATURE COLUMNS (for preprocessing)
+# ═══════════════════════════════════════════════════════════
+FEATURE_COLS = NUMERIC_FEATURES + ["hour_sin", "hour_cos", "day_sin", "day_cos", "heat_delta", "chill_delta"]
+LOOK_BACK = 72  # Maximum lookback period for sequences
+
+# ═══════════════════════════════════════════════════════════
